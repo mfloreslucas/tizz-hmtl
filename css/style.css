@@ -1,222 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-
-    h2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: "Host Grotesk", sans-serif;
-        font-size: 2rem;
-    }
-}
 body {
-
-    display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto 2%;
-        grid-template-areas: 'header'
-                            'menu'
-                            'main'
-                            'productos'
-                            'resenias'
-                            'contacto'
-                            'footer';
-        height: 100vh;
-
-    header {
-        grid-area: header;
-        padding-left: 50rem;
-
-        nav {
-            grid-area: menu;
-            z-index: 1;
-            top: 20px;
-            position: fixed;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
-                list-style: none;
-                font-family: "Host Grotesk", sans-serif;
-                font-size: 1.2rem;
-
-                li {
-                    a {
-                        margin: 1rem;
-                        color: #ffffff;
-                        text-decoration: none;
-                    }
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-
-    main {
-        grid-area: main;
-
-        #sectionInicio {
-            .container {
-                position: relative;
-                width: 100%;
-                height: 100vh;
-                background-image: url(../assets/img/background.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-
-                h1{
-                    position: absolute;
-                    padding-top: 22rem;
-                    padding-left: 21.2rem;
-                    font-family: "Goldman", sans-serif;
-                    font-size: 10rem;
-                    color: black;
-                    text-shadow: -2px -2px 0 #5B6D6F;
-    
-                    }
-            }
-        }
-
-        #sectionProd {
-            grid-area: productos;
-            margin-top: 2rem;
-
-            .container {
-                display: flex;
-                grid-template-rows: repeat(2, 1fr);
-                grid-template-columns: repeat(3, 1fr);
-                justify-items: center;
-                margin-top: 2rem;
-                row-gap: 2rem;
-                flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: space-evenly;
-                padding-left: 4rem;
-                padding-right: 4rem;
-                }
-            }
-        
-
-        div[class^='item'] {
-            h3, p {
-                padding-top: 0.5em;
-                display: flex;
-                justify-content: space-around;
-                font-family: "Open Sans", sans-serif;
-                font-size: 1.3em;
-            }
-        }
-
-
-        #sectionRes {
-            grid-area: resenias;
-            margin-top: 2rem;
-
-            .container {
-                display: grid;
-                height: auto;
-                grid-template-columns: repeat(3, 1fr);
-                justify-items: center;
-                margin-top: 2rem;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-                gap: 3em;
-                }
-            }
-        
-
-        div[class^='box'] {
-            width: 500px;
-            display: flex;
-            height: 100px;
-            border: 1px solid rgba(0, 0, 0, 0.452);
-            padding: 0.5rem;
-            overflow: hidden;
-            line-clamp: 3;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            line-height: 33px;
-            background-image: linear-gradient(to left bottom, #a4acac, #8b9798, #728386, #5b6f74, #445b63);
-            border-radius: 18px 18px 18px 18px;
-            -webkit-border-radius: 18px 18px 18px 18px;
-            -moz-border-radius: 18px 18px 18px 18px;
-
-            h3, p {
-                display: flex;
-                justify-content: space-around;
-                color: black;
-                font-family: "Open Sans", sans-serif;
-                font-size: auto;
-            }
-        }    
-
-        #sectionCont {
-            grid-area: contacto;
-            margin-top: 2rem;
-
-            form {
-                margin-top: 2rem;
-                display: grid;
-                justify-items: center;
-            }
-            
-
-            fieldset {
-                border: none;
-                p {
-                    margin-bottom: 3rem;
-                    
-                    input {
-                        font-size:18px;
-                        padding:10px 10px 10px 5px;
-                        display:block;
-                        width:300px;
-                        border:none;
-                        border-bottom:1px solid #757575; 
-                        font-family: "Open Sans", sans-serif;
-
-                    }
-                    
-                    textarea {
-                        font-size:18px;
-                        display:block;
-                        resize: none;
-                        font-family: "Open Sans", sans-serif;
-                    }
-            }
-        }
-    }
+    font-family: "Open Sans", sans-serif;
 }
 
-    footer {
-        grid-area: footer;
-
-
-        p {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 2rem;
-            font-family: "Open Sans", sans-serif;
-        }
-    }
-
+h1 {
+    font-family: "Goldman", sans-serif;
+    font-size: 10rem;
+    text-shadow: -2px -2px 0 #5B6D6F;
+}
+#intro {
+    height: 100vh;
+    background: url('../assets/img/background.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
 }
 
+/* Estilos del navbar */
+.navbar {
+    transition: background-color 0.5s ease;
+}
 
+.navbar-scrolled {
+    background-color: #343a40 !important; /* Cambia al color oscuro cuando se hace scroll */
+}
 
+.navbar-transparent {
+    background-color: transparent !important; /* Navbar transparente */
+}
 
+li a{
+    text-decoration: none;
+}
+footer {
+    font-family: "Open Sans", sans-serif;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00ff00; /* Cambia el color a verde */
+}
+
+/* Estilo para los iconos de redes sociales */
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid palevioletred; /* Borde verde similar al de la imagen */
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: white; /* Color inicial del ícono */
+}
+
+.social-icon:hover {
+    background-color: pink; /* Fondo verde al hacer hover */
+    color: #000; /* Cambia el color del ícono al hacer hover */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del ícono al hacer hover */
+}
+
+.social-icon i {
+    transition: all 0.3s ease;
+}
+
+.social-icon i:hover {
+    color: #000; /* Cambia el color del ícono dentro del borde */
+}
+
+form .form-control {
+    border: none;
+    border-bottom: 2px solid #343a40;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+    border-bottom: 2px solid pink;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+form button[type="submit"] {
+    background-color: transparent;
+    border: solid 2px pink;
+}
+
+form button[type="submit"]:hover {
+    background-color: transparent;
+    border: solid 2px palevioletred;
+    transform: scale(1.05);
+}
+
+form {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Reseñas */
+#sectionRes {
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+/* Imagen del usuario */
+.carousel-item img {
+    object-fit: cover;
+    border: 3px solid #ddd;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+/* Estrellas de calificación */
+.star-rating i {
+    color: #ffc107; /* Dorado */
+    margin: 0 2px; /* Espaciado entre estrellas */
+    font-size: 1.5rem; /* Tamaño de las estrellas */
+}
+
+/* Controles del Carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Cambia el color de los controles a blanco */
+}
