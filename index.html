@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online de Mobb</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <section id="sectionInicio"></section>
+            <nav>
+                <ul>
+                    <li><a href="#sectionInicio">Inicio</a></li>
+                    <li><a href="#sectionProd">Productos</a></li>
+                    <li><a href="#sectionRes">Reseñas</a></li>
+                    <li><a href="#sectionCont">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section id="sectionInicio">
+            <div class="container">
+                <h1>Mobb</h1>
+            </div>
+        </section>
+        <section id="sectionProd">
+            <h2>Productos</h2>
+            <div class="container">
+
+                <div class="card">
+                    <div class="imagen">
+                        <img src="/assets/img/productos/remera-g3n.jpg" alt="Imagen del Producto" width="460" height="575">
+                        <div class="item">
+                            <h3>REMERA G3N</h3>
+                            <p>$43.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imagen">
+                        <img src="/assets/img/productos/buzo-nodus.jpg" alt="Imagen del Producto" width="460" height="575">
+                        <div class="item">
+                            <h3>BUZO NODUS</h3>
+                            <p>$84.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imagen">
+                        <img src="/assets/img/productos/remera-m1aw.jpg" alt="Imagen del Producto" width="460" height="575">
+                        <div class="item">
+                            <h3>REMERA M1AW</h3>
+                            <p>$40.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imagen">
+                        <img src="/assets/img/productos/bolso-symbiox.jpg" alt="Imagen del Producto" width="460" height="575">
+                        <div class="item">
+                            <h3>BOLSO SYMBIOX</h3>
+                            <p>$64.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imagen">
+                        <img src="/assets/img/productos/pantalon-atomxx.jpg" alt="Imagen del Producto" width="460" height="575">
+                        <div class="item">
+                            <h3>PANTALÓN ATOMXX</h3>
+                            <p>$76.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imagen">
+                        <img src="/assets/img/productos/bermuda-nexomycel.jpg" alt="Imagen del Producto" width="460" height="575">
+                        <div class="item">
+                            <h3>BERMUDA NEXOMYCEL</h3>
+                            <p>$74.000</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </section>
+
+        <section id="sectionRes">
+            <h2>Reseñas</h2>
+            <div class="container">
+                <div class="box_1">
+                    <h3>Lorem.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="box">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sectionCont">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/myzyjjdo" method="POST">
+
+                <fieldset>
+                    <p>
+                        <label for="nombre"></label>
+                        <input type="text" name="remitente" id="nombre" placeholder="Nombre/s" size="10" required minlength="3" maxlength="10">
+                    </p>
+                    <p>
+                        <label for="email"></label>
+                        <input type="email" name="correo" id="email" placeholder="Correo Electrónico" pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/" required>
+                    </p>
+                    <p>
+                        <label for="mensaje"></label>
+                        <textarea name="comunicado" id="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Talento Tech 2024 - Comisión 24288
+            <br>
+            Sitio construído por Tiziana Kaszynski
+        </p>
+    </footer>
+</div>
+</body>
+</html>
